@@ -1,0 +1,32 @@
+@keyframes cogs-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(44deg);
+    }
+}
+
+.cog1 {
+    animation-name: cogs-rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+    width: 100px;
+}
+
+.cog2 {
+    animation-name: cogs-rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+    width: 100px;
+    position: relative;
+    top: 70px;
+    left: -45px;
+}
