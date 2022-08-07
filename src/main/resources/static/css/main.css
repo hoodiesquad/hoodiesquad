@@ -281,7 +281,7 @@ body {
   color: #fff;
   margin-bottom: 30px; }
 .main-blog {
-  /*background-image: url("https://assets.codepen.io/3364143/skate-removebg-preview.png");*/
+  background-image: url("https://assets.codepen.io/3364143/skate-removebg-preview.png");
   background-size: 80%;
   background-position-x: 150px;
   background-color: #31abbd;
@@ -298,7 +298,7 @@ body {
   .main-blog + .main-blog {
     margin-left: 20px;
     width: 35%;
-    /*background-image: url(https://c0.anyrgb.com/images/1020/945/venice-beach-2018-outdoors-sport-men-jumping-desert-sunset-extreme-sports-one-person-action.jpg);*/
+    background-image: url(https://c0.anyrgb.com/images/1020/945/venice-beach-2018-outdoors-sport-men-jumping-desert-sunset-extreme-sports-one-person-action.jpg);
     background-color: unset;
     background-position-x: 0;
     background-size: 139%;
@@ -463,20 +463,18 @@ video {
   cursor: pointer;
   transition: 0.4s; }
 
-.stream-area {
-  display: none; }
-  @media screen and (max-width: 940px) {
-    .stream-area {
-      flex-direction: column; }
-      .stream-area .video-stream {
-        width: 100%; }
-      .stream-area .chat-stream {
-        margin-left: 0;
-        margin-top: 30px; }
-      .stream-area .video-js.vjs-fluid {
-        min-height: 250px; }
-      .stream-area .msg__content {
-        max-width: 100%; } }
+@media screen and (max-width: 940px) {
+  .stream-area {
+    flex-direction: column; }
+    .stream-area .video-stream {
+      width: 100%; }
+    .stream-area .chat-stream {
+      margin-left: 0;
+      margin-top: 30px; }
+    .stream-area .video-js.vjs-fluid {
+      min-height: 250px; }
+    .stream-area .msg__content {
+      max-width: 100%; } }
 
 .show .stream-area {
   display: flex; }
