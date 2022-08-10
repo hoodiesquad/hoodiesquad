@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{layout :: layout(~{::body}, ~{::title})}" xmlns:th="http://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Admin</title>
+  </head>
+    <body>
+      <h1>Admin panel</h1>
+
+      <form th:action="@{/logout}" method="post">
+          <input type="submit" value="Sign Out"/>
+      </form>
+    </body>
+</html>
