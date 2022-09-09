@@ -585,7 +585,7 @@ video {
   border-radius: 20px;
   padding: 0 20px;
   max-height: 414px;
-  overflow: auto; }
+}
   .chat-footer {
     display: flex;
     align-items: center;
