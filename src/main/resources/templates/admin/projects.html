@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{layout :: layout(~{::body}, ~{::title})}" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin</title>
+    </head>
+    <body>
+        <h1>Admin panel</h1>
+
+        <form th:action="@{/logout}" method="post">
+            <input class="like" type="submit" value="Sign Out"/>
+        </form>
+
+        <div class="videos" style="margin: 10px">
+            <div class="video anim" style="--delay: .4s">
+                <div class="video-name">Projects</div>
+                <div class="video-view">manage of projects</div>
+            </div>
+        </div>
+    </body>
+</html>

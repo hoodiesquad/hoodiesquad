@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" th:replace="~{layout :: layout(~{::body}, ~{::title})}" xmlns:th="http://www.thymeleaf.org">
-  <head>
-      <meta charset="UTF-8">
-      <title>Admin</title>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin</title>
+    </head>
     <body>
-      <h1>Admin panel</h1>
+        <h1>Admin panel</h1>
 
-      <form th:action="@{/logout}" method="post">
-          <input type="submit" value="Sign Out"/>
-      </form>
+        <form th:action="@{/logout}" method="post">
+            <input class="like" type="submit" value="Sign Out"/>
+        </form>
+
+        <div class="videos" style="margin: 10px">
+            <div class="video anim" style="--delay: .4s">
+                <div class="video-name"><a class="discover" href="/admin/projects">Projects</a></div>
+                <div class="video-view">manage of projects</div>
+            </div>
+
+            <div class="video anim" style="--delay: .5s">
+                <div class="video-name">Admins</div>
+                <div class="video-view">users with admin privilege</div>
+            </div>
+
+            <div class="video anim" style="--delay: .6s">
+                <div class="video-name">Users</div>
+                <div class="video-view">list of users</div>
+            </div>
+
+            <div class="video anim" style="--delay: .7s">
+                <div class="video-name">Settings</div>
+                <div class="video-view">list of system variables</div>
+            </div>
+        </div>
     </body>
 </html>
