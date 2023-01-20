@@ -31,15 +31,16 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-  body:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(163deg, #1f1d2b 21%, rgba(31, 29, 43, 0.3113620448) 64%);
-    opacity: 0.4;
-    content: ""; }
+
+body:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 17, 59, 0.81);
+  content: "";
+}
 
 .container {
   background-color: var(--theme-bg);
@@ -716,7 +717,6 @@ textarea {
   bottom: 14px;
   padding-left: 36px;
   left: 14px;
-  width: calc(100% - 28px);
   right: 0;
   border-radius: 10px;
   height: 4em;
